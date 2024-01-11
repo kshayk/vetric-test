@@ -20,6 +20,7 @@ export class UserController {
 
         try {
             const userData = await userRequestService.getUserData();
+
             response.send({
                 success: true,
                 userData

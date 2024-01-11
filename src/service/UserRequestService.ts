@@ -12,7 +12,7 @@ export class UserRequestService {
         this.fbUserID = fbUserID;
     }
 
-    public async getUserData() : Promise<any> {
+    public async getUserData() : Promise<string> {
         let responseBody = null;
         try {
             responseBody = await this.sendRequest();
